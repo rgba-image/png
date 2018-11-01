@@ -8,6 +8,11 @@ Convert PNG to and from ImageData
 
 ## usage
 
+```typescript
+fromPng: ( pngBuffer: Uint8Array ) => ImageData
+toPng: ( imageData: ImageData, options?: PNGOptions ) => Uint8Array
+```
+
 Convert an `ImageData` instance to PNG:
 
 ```js
@@ -32,11 +37,6 @@ const imageData = fromPng( png )
 ```
 
 ## options
-
-```typescript
-fromPng: ( pngBuffer: Uint8Array ) => ImageData
-toPng: ( imageData: ImageData, options?: PNGOptions ) => Uint8Array
-```
 
 Uses [pngjs](https://github.com/lukeapage/pngjs) for encoding/decoding
 
