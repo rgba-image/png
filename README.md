@@ -1,6 +1,6 @@
 # png
 
-Convert PNG to and from ImageData
+Convert between PNG and ImageData
 
 ## install
 
@@ -9,7 +9,7 @@ Convert PNG to and from ImageData
 ## usage
 
 ```typescript
-fromPng: ( pngBuffer: Uint8Array ) => ImageData
+fromPng: ( pngBuffer: Uint8Array, options?: ParserOptions ) => ImageData
 toPng: ( imageData: ImageData, options?: PNGOptions ) => Uint8Array
 ```
 
@@ -40,13 +40,17 @@ const imageData = fromPng( png )
 
 Uses [pngjs](https://github.com/lukeapage/pngjs) for encoding/decoding
 
-`toPng` optionally takes [`PNGOptions`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/pngjs/index.d.ts) which are passed through to pngjs
+`fromPng` optionally takes a second argument,
+[`ParserOptions`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/pngjs/index.d.ts)
+which is passed through to pngjs
+
+`toPng` optionally takes [`PNGOptions`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/pngjs/index.d.ts)
 
 ## License
 
 MIT License
 
-Copyright (c) 2018 Nik Coughlin
+Copyright (c) 2021 Nik Coughlin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

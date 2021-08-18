@@ -1,7 +1,7 @@
 {
   "name": "@rgba-image/png",
-  "version": "0.1.0",
-  "description": "Convert PNG to and from ImageData",
+  "version": "0.1.1",
+  "description": "Convert between PNG and ImageData",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/rgba-image/png#readme",
   "dependencies": {
-    "@rgba-image/common": "^0.1.0",
-    "@rgba-image/create-image": "^0.1.1",
-    "pngjs": "^3.3.3"
+    "@rgba-image/common": "^0.1.13",
+    "@rgba-image/create-image": "^0.2.0",
+    "pngjs": "^6.0.0"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.12.1",
-    "@types/pngjs": "^3.3.2"
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.6.1",
+    "@types/pngjs": "^6.0.1"
   }
 }
